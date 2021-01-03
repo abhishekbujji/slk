@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel='stylesheet'>
+    <title>Voya</title>
+</head>
+
+<body>
+    <div style="background-color: coral;padding: 0ch;height: 50px;">
+        <div>
+            <span style="align-content: flex-start;">Production</span>
+            <span id="date"></span>
+            <script>
+                n = new Date();
+                y = n.getFullYear();
+                m = n.getMonth() + 1;
+                d = n.getDate();
+                document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+            </script>
+        </div>
+    </div>
+    <br />
+    <div style="overflow: hidden;height: 150px;">
+        <img src="https://logodix.com/logo/359988.jpg" style="height: 200px;">
+    </div>
+    <div style="text-align: center;">
+
+        <h1 style="color: blue;">Interim Notice Admin Tool</h1>
+
+        <div style="text-align: center;">
+            <button class="voya_btn"><span class="btn_txt">Data Load</span></button>
+            <button class="voya_btn"><span class="btn_txt">Notices</span></button>
+            <button class="voya_btn"><span class="btn_txt">Reports</span></button>
+            <button class="quit_btn"><span class="btn_txt">Quit App</span></button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+.headi{
+background-color: aquamarine;
+}
+.voya_btn{
+    background-color: coral;
+    height: 100px;
+    width: 100px;
+    border-style: none;
+    box-shadow: 0px 8px 15px rgb(72 10 10 / 36%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.quit_btn{
+    background-color: #0ec9f8;
+    height: 100px;
+    width: 100px;
+    border-style: none;
+    box-shadow: 0px 8px 15px rgb(72 10 10 / 36%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.btn_txt{
+    color: white;
+}
